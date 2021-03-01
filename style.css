@@ -60,6 +60,11 @@ body {
   color: #FF3921;
 }
 
+.header .logo {
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
 .header__info {
   height: 50%;
   display: -webkit-box;
@@ -570,6 +575,12 @@ body {
 @media all and (max-width: 768px) {
   .header__info a span {
     display: none;
+  }
+  .video__content--big-card {
+    margin: 0;
+  }
+  .video__content--big-card h6 {
+    font-size: 14px;
   }
   .conduongnongsan__content--nav .nav-tabs {
     overflow-x: scroll;

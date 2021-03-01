@@ -58,6 +58,9 @@ body {
 }
 
 .header {
+    & .logo {
+        object-fit: contain;
+    }
     &__info {
         height: 50%;
         display: flex;
@@ -505,6 +508,12 @@ body {
 @media all and (max-width: 768px) {
     .header__info a span {
         display: none;
+    }
+    .video__content--big-card {
+        h6 {
+            font-size: 14px;
+        }
+        margin: 0;
     }
     .conduongnongsan__content--nav .nav-tabs {
         overflow-x: scroll;
