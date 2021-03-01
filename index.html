@@ -25,10 +25,10 @@
         <div class="wraper">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-2">
+                    <div class="col-md-2 col-sm-2">
                         <img src="images/header-logo.png" alt="logo" class="logo img-fluid">
                     </div>
-                    <div class="col-md-10">
+                    <div class="col-md-10 col-sm-10">
                         <div class="header__info">
                             <a href="#" class="btn btn-primary"><i class="far fa-envelope-open"></i><span> Hòm thư độc giả</span></a>
                             <a href="#"><i class="fab fa-facebook-f"></i></a>
@@ -40,7 +40,7 @@
                             </div>
                         </div>
                         <nav class="header__nav navbar">
-                            <ul class="navbar-nav flex-row justify-content-between">
+                            <ul class="navbar-nav flex-row flex-nowrap justify-content-between">
                                 <li class="navbar-item">
                                     <a class="navbar-link" href="#">Video</a>
                                 </li>
@@ -74,7 +74,7 @@
             <!-- Section Hero -->
             <section class="hero">
                 <div class="container">
-                    <div class="row">
+                    <div class="row gy-5">
                         <div class="col-md-6">
                             <a href="#">
                                 <div class="hero__big-image">
@@ -83,30 +83,38 @@
                                 </div>
                             </a>
                         </div>
-                        <div class="col-md-3">
-                            <a href="#">
-                                <img class="hero__small-image" src="images/Untitled-1.png" alt="hero">
-                                <h6 class="hero__small-title">
-                                    Sâm Ngọc Linh thuộc loại tốt nhất thế giới
-                                    <i class="fas fa-video"></i>
-                                    <i class="fas fa-comment-alt"></i>
-                                    29
-                                </h6>
-                            </a>
-                            <a href="#">
-                                <img class="hero__small-image" src="images/Untitled-1.png" alt="hero">
-                                <h6 class="hero__small-title">Sâm Ngọc Linh thuộc loại tốt nhất thế giới</h6>
-                            </a>
+                        <div class="col-md-3 hero__small-card">
+                            <div>
+                                <a href="#">
+                                    <img class="hero__small-image" src="images/Untitled-1.png" alt="hero">
+                                    <h6 class="hero__small-title">
+                                        Sâm Ngọc Linh thuộc loại tốt nhất thế giới
+                                        <i class="fas fa-video"></i>
+                                        <i class="fas fa-comment-alt"></i>
+                                        29
+                                    </h6>
+                                </a>
+                            </div>
+                            <div>
+                                <a href="#">
+                                    <img class="hero__small-image" src="images/Untitled-1.png" alt="hero">
+                                    <h6 class="hero__small-title">Sâm Ngọc Linh thuộc loại tốt nhất thế giới</h6>
+                                </a>
+                            </div>
                         </div>
-                        <div class="col-md-3">
-                            <a href="#">
-                                <img class="hero__small-image" src="images/Untitled-1.png" alt="hero">
-                                <h6 class="hero__small-title">Sâm Ngọc Linh thuộc loại tốt nhất thế giới</h6>
-                            </a>
-                            <a href="#">
-                                <img class="hero__small-image" src="images/Untitled-1.png" alt="hero">
-                                <h6 class="hero__small-title">Sâm Ngọc Linh thuộc loại tốt nhất thế giới</h6>
-                            </a>
+                        <div class="col-md-3 hero__small-card">
+                            <div>
+                                <a href="#">
+                                    <img class="hero__small-image" src="images/Untitled-1.png" alt="hero">
+                                    <h6 class="hero__small-title">Sâm Ngọc Linh thuộc loại tốt nhất thế giới</h6>
+                                </a>
+                            </div>
+                            <div>
+                                <a href="#">
+                                    <img class="hero__small-image" src="images/Untitled-1.png" alt="hero">
+                                    <h6 class="hero__small-title">Sâm Ngọc Linh thuộc loại tốt nhất thế giới</h6>
+                                </a>
+                            </div>
                         </div>
                     </div>
                     <img class="banner" src="images/Untitled-2.png" alt="banner">
@@ -187,7 +195,7 @@
                             </nav>
                             <div class="tab-content" id="nav-tabContent">
                                 <div class="tab-pane fade show active" id="nav-cdns" role="tabpanel" aria-labelledby="nav-cdns-tab">
-                                    <div class="row">
+                                    <div class="row gy-5">
                                         <div class="col-md-4">
                                             <div class="khCongNgheXanh__content--card">
                                                 <img src="images/Untitled-3.png">
@@ -288,7 +296,7 @@
                                 </div>
                             </div>
                             <a href="#">> Xem thêm</a>
-                            <p>* Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, saepe.</p>
+                            <p class="text-end">* Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, saepe.</p>
                         </div>
                         <img class="conduongnongsan__content--map" src="images/vn-map.png" alt="vn-map">
                     </div>
@@ -345,7 +353,7 @@
                         <span>Mô hình ưu việt</span>
                     </div>
                     <div class="mohinhuuviet__content">
-                        <div class="row">
+                        <div class="row gy-5">
                             <div class="col-md-4">
                                 <a href="#">
                                     <div class="mohinhuuviet__content--card">
@@ -383,7 +391,7 @@
                         <span>Chính sách</span>
                     </div>
                     <div class="chinhsach__content">
-                        <div class="row row-cols-5">
+                        <div class="row row-cols-5 row-cols-sm-3">
                             <div class="col">
                                 <a href="#">
                                     <div class="chinhsach__content--card">
@@ -437,33 +445,41 @@
                         <span>Khoa học - công nghệ xanh</span>
                     </div>
                     <div class="khCongNgheXanh__content">
-                        <div class="row">
-                            <div class="col-md-3">
+                        <div class="row gy-5">
+                            <div class="col-md-3 col-sm-12">
                                 <div class="khCongNgheXanh__content--card">
-                                    <h6>Nhà kính trồng rau công nghệ cao hình quả cầu tại Hội An</h6>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam provident nisi cupiditate.</p>
+                                    <div class="khCongNgheXanh__content--card--paragraph">
+                                        <h6>Nhà kính trồng rau công nghệ cao hình quả cầu tại Hội An</h6>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam provident nisi cupiditate.</p>
+                                    </div>
                                     <img src="images/Untitled-1.png">
                                 </div>
                             </div>
-                            <div class="col-md-3">
+                            <div class="col-md-3 col-sm-12">
                                 <div class="khCongNgheXanh__content--card">
                                     <img src="images/Untitled-1.png">
-                                    <h6>Nhà kính trồng rau công nghệ cao hình quả cầu tại Hội An</h6>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam provident nisi cupiditate.</p>
+                                    <div class="khCongNgheXanh__content--card--paragraph">
+                                        <h6>Nhà kính trồng rau công nghệ cao hình quả cầu tại Hội An</h6>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam provident nisi cupiditate.</p>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="col-md-3">
+                            <div class="col-md-3 col-sm-12">
                                 <div class="khCongNgheXanh__content--card">
-                                    <h6>Nhà kính trồng rau công nghệ cao hình quả cầu tại Hội An</h6>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam provident nisi cupiditate.</p>
+                                    <div class="khCongNgheXanh__content--card--paragraph">
+                                        <h6>Nhà kính trồng rau công nghệ cao hình quả cầu tại Hội An</h6>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam provident nisi cupiditate.</p>
+                                    </div>
                                     <img src="images/Untitled-1.png">
                                 </div>
                             </div>
-                            <div class="col-md-3">
+                            <div class="col-md-3 col-sm-12">
                                 <div class="khCongNgheXanh__content--card">
                                     <img src="images/Untitled-1.png">
-                                    <h6>Nhà kính trồng rau công nghệ cao hình quả cầu tại Hội An</h6>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam provident nisi cupiditate.</p>
+                                    <div class="khCongNgheXanh__content--card--paragraph">
+                                        <h6>Nhà kính trồng rau công nghệ cao hình quả cầu tại Hội An</h6>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam provident nisi cupiditate.</p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -479,23 +495,23 @@
                         <span>Đơn vị đồng hành Nông Nghiệp Sạch</span>
                     </div>
                     <div class="donvidonghanh__content">
-                        <div class="row">
-                            <div class="col-md-2">
+                        <div class="row gy-5">
+                            <div class="col-md-2 col-sm-4">
                                 <img src="images/Untitled-1.png">
                             </div>
-                            <div class="col-md-2">
+                            <div class="col-md-2 col-sm-4">
                                 <img src="images/Untitled-1.png">
                             </div>
-                            <div class="col-md-2">
+                            <div class="col-md-2 col-sm-4">
                                 <img src="images/Untitled-1.png">
                             </div>
-                            <div class="col-md-2">
+                            <div class="col-md-2 col-sm-4">
                                 <img src="images/Untitled-1.png">
                             </div>
-                            <div class="col-md-2">
+                            <div class="col-md-2 col-sm-4">
                                 <img src="images/Untitled-1.png">
                             </div>
-                            <div class="col-md-2">
+                            <div class="col-md-2 col-sm-4">
                                 <img src="images/Untitled-1.png">
                             </div>
                         </div>
@@ -514,10 +530,10 @@
             <div class="wraper">
                 <div class="container">
                     <div class="row">
-                        <div class="col-md-2">
+                        <div class="col-md-2 col-sm-2">
                             <img src="images/logo.png" alt="logo" class="logo img-fluid">
                         </div>
-                        <div class="col-md-10">
+                        <div class="col-md-10 col-sm-10">
                             <div class="footer__info--item">
                                 <i class="fas fa-phone-alt"></i>
                                 <span>Điện thoại: 024 6027 8460</span>

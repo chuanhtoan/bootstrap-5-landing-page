@@ -140,6 +140,7 @@ body {
 }
 
 .header__nav ul li a {
+  white-space: nowrap;
   color: #7E6929;
   padding: 8px;
 }
@@ -249,8 +250,21 @@ body {
   display: flex;
 }
 
+.conduongnongsan__content--nav {
+  width: 100%;
+}
+
 .conduongnongsan__content--nav nav {
   margin-bottom: 30px;
+}
+
+.conduongnongsan__content--nav nav .nav-tabs {
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+}
+
+.conduongnongsan__content--nav nav .nav-tabs button {
+  white-space: nowrap;
 }
 
 .conduongnongsan__content--nav a, .conduongnongsan__content--nav p {
@@ -259,7 +273,7 @@ body {
 }
 
 .conduongnongsan__content--nav p {
-  text-align: end;
+  text-align: start;
   font-size: 13px;
 }
 
@@ -414,6 +428,33 @@ body {
   border: 2px solid #ccc;
 }
 
+.khCongNgheXanh__content--card--paragraph {
+  position: relative;
+}
+
+.khCongNgheXanh__content--card--paragraph:nth-child(odd)::after {
+  content: '';
+  width: 0;
+  height: 0;
+  border-left: 13px solid transparent;
+  border-right: 13px solid transparent;
+  border-top: 20px solid white;
+  position: absolute;
+  left: 45%;
+}
+
+.khCongNgheXanh__content--card--paragraph:nth-child(even)::after {
+  content: '';
+  width: 0;
+  height: 0;
+  border-left: 13px solid transparent;
+  border-right: 13px solid transparent;
+  border-bottom: 20px solid white;
+  position: absolute;
+  left: 45%;
+  top: -20px;
+}
+
 .khCongNgheXanh__content--card img {
   width: 100%;
 }
@@ -430,31 +471,6 @@ body {
   font-weight: 500;
   font-size: 15px;
   padding: 0 10px;
-  position: relative;
-}
-
-.khCongNgheXanh__content--card p:nth-child(even)::after {
-  content: '';
-  width: 0;
-  height: 0;
-  border-left: 13px solid transparent;
-  border-right: 13px solid transparent;
-  border-top: 20px solid white;
-  position: absolute;
-  right: 45%;
-  bottom: -34px;
-}
-
-.khCongNgheXanh__content--card p:nth-child(odd)::after {
-  content: '';
-  width: 0;
-  height: 0;
-  border-left: 13px solid transparent;
-  border-right: 13px solid transparent;
-  border-bottom: 20px solid white;
-  position: absolute;
-  right: 45%;
-  top: -100%;
 }
 
 .donvidonghanh__title::before, .donvidonghanh__title::after {
@@ -514,5 +530,49 @@ body {
 .copyright i {
   font-size: 22px;
   margin-right: 18px;
+}
+
+.copyright__logo {
+  white-space: nowrap;
+}
+
+@media all and (max-width: 991px) {
+  .header__nav ul {
+    margin-top: 8px;
+    overflow-x: scroll;
+  }
+  .hero__big-image h6 {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  .hero__small-card div:first-child {
+    margin-bottom: 40px;
+  }
+  .video__content--big-card h6 {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    line-height: 130%;
+  }
+  .conduongnongsan__content {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .conduongnongsan__content--map {
+    margin-top: 26px;
+  }
+}
+
+@media all and (max-width: 768px) {
+  .header__info a span {
+    display: none;
+  }
+  .conduongnongsan__content--nav .nav-tabs {
+    overflow-x: scroll;
+  }
 }
 /*# sourceMappingURL=style.css.map */
