@@ -130,7 +130,8 @@ body {
   color: #D3D3D3;
 }
 
-.header__info--search i {
+.header__info--search a {
+  margin-right: 0;
   position: relative;
   right: 26px;
   color: #D3D3D3;
